@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="tr" dir="ltr" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dönüşüm Hakkında — Dönüştürücüler Nasıl Çalışır</title>
+<meta name="description" content="Dönüşüm hesaplayıcıları nasıl çalışır: giriş alanları neden toplanır, çarpanlar hangi uluslararası tanımlardan gelir ve hangi birimler yalnızca yaklaşıktır.">
+<link rel="canonical" href="https://conversions.github.io/tr/about/">
+<link rel="alternate" hreflang="en" href="https://conversions.github.io/about/">
+<link rel="alternate" hreflang="es" href="https://conversions.github.io/es/about/">
+<link rel="alternate" hreflang="de" href="https://conversions.github.io/de/about/">
+<link rel="alternate" hreflang="pt" href="https://conversions.github.io/pt/about/">
+<link rel="alternate" hreflang="it" href="https://conversions.github.io/it/about/">
+<link rel="alternate" hreflang="fr" href="https://conversions.github.io/fr/about/">
+<link rel="alternate" hreflang="pl" href="https://conversions.github.io/pl/about/">
+<link rel="alternate" hreflang="tr" href="https://conversions.github.io/tr/about/">
+<link rel="alternate" hreflang="nl" href="https://conversions.github.io/nl/about/">
+<link rel="alternate" hreflang="ar" href="https://conversions.github.io/ar/about/">
+<link rel="alternate" hreflang="x-default" href="https://conversions.github.io/about/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dönüşüm Hakkında — Dönüştürücüler Nasıl Çalışır">
+<meta property="og:description" content="Dönüşüm hesaplayıcıları nasıl çalışır: giriş alanları neden toplanır, çarpanlar hangi uluslararası tanımlardan gelir ve hangi birimler yalnızca yaklaşıktır.">
+<meta property="og:url" content="https://conversions.github.io/tr/about/">
+<meta property="og:image" content="https://conversions.github.io/assets/og-image.png">
+<meta property="og:site_name" content="Conversion">
+<meta property="og:locale" content="tr">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1877f2">
+<link rel="icon" href="../../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../../assets/favicon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/ibm-plex-sans-latin-400-normal.woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/style.css">
+
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../../tr/" aria-label="Conversion">
+      <img class="logo logo-light" src="../../assets/logo.png" width="285" height="72" alt="Conversion">
+      <img class="logo logo-dark" src="../../assets/logo-dark.png" width="285" height="72" alt="" aria-hidden="true">
+    </a>
+    <nav class="head-nav">
+      <a href="../../tr/">Tüm dönüştürücüler</a>
+      <a href="../../tr/about/">Hakkında</a>
+    </nav>
+    <div class="lang">
+      <button class="lang-btn" id="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Dil"><img class="flag" src="../../assets/flags/tr.svg" width="20" height="15" alt=""><span>TR</span><svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+      <div class="lang-menu" id="lang-menu" role="menu">
+      <a href="../../about/" hreflang="en" lang="en"><span class="lang-name"><img class="flag" src="../../assets/flags/gb.svg" width="20" height="15" alt="" loading="lazy">English</span><span class="code">en</span></a>
+      <a href="../../es/about/" hreflang="es" lang="es"><span class="lang-name"><img class="flag" src="../../assets/flags/es.svg" width="20" height="15" alt="" loading="lazy">Español</span><span class="code">es</span></a>
+      <a href="../../de/about/" hreflang="de" lang="de"><span class="lang-name"><img class="flag" src="../../assets/flags/de.svg" width="20" height="15" alt="" loading="lazy">Deutsch</span><span class="code">de</span></a>
+      <a href="../../pt/about/" hreflang="pt" lang="pt"><span class="lang-name"><img class="flag" src="../../assets/flags/pt.svg" width="20" height="15" alt="" loading="lazy">Português</span><span class="code">pt</span></a>
+      <a href="../../it/about/" hreflang="it" lang="it"><span class="lang-name"><img class="flag" src="../../assets/flags/it.svg" width="20" height="15" alt="" loading="lazy">Italiano</span><span class="code">it</span></a>
+      <a href="../../fr/about/" hreflang="fr" lang="fr"><span class="lang-name"><img class="flag" src="../../assets/flags/fr.svg" width="20" height="15" alt="" loading="lazy">Français</span><span class="code">fr</span></a>
+      <a href="../../pl/about/" hreflang="pl" lang="pl"><span class="lang-name"><img class="flag" src="../../assets/flags/pl.svg" width="20" height="15" alt="" loading="lazy">Polski</span><span class="code">pl</span></a>
+      <a href="#" hreflang="tr" lang="tr" aria-current="true"><span class="lang-name"><img class="flag" src="../../assets/flags/tr.svg" width="20" height="15" alt="" loading="lazy">Türkçe</span><span class="code">tr</span></a>
+      <a href="../../nl/about/" hreflang="nl" lang="nl"><span class="lang-name"><img class="flag" src="../../assets/flags/nl.svg" width="20" height="15" alt="" loading="lazy">Nederlands</span><span class="code">nl</span></a>
+      <a href="../../ar/about/" hreflang="ar" lang="ar"><span class="lang-name"><img class="flag" src="../../assets/flags/sa.svg" width="20" height="15" alt="" loading="lazy">العربية</span><span class="code">ar</span></a>
+      </div>
+    </div>
+    <button class="icon-btn" id="theme-btn" type="button" aria-label="Temayı değiştir"><svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg></button>
+  </div>
+</header>
+<main>
+<section class="sec" style="padding-top:28px">
+  <nav class="crumbs"><a href="../../tr/">Dönüştürücüler</a> / <span>Hakkında</span></nav>
+  <h1>Dönüşüm Hakkında</h1>
+  <p class="lead">Tek bir fikir etrafında kurulmuş küçük bir birim hesaplayıcı seti: ölçümler parça parça gelir, dolayısıyla bir dönüştürücü de onları böyle kabul etmelidir.</p>
+</section>
+
+<section class="sec sec-pad">
+  <div class="prose">
+    <p>Her sayfa tek bir birim ailesini barındırır. Herhangi bir alana yazın, geri kalanı siz yazdıkça dolar — sayfa yenilenmez, düğme aranmaz. Çoğu sayfada alanlar önce toplanır; bu sayede &quot;5 ft 9 in&quot; veya &quot;2 gün 6 saat&quot; iki ayrı hesaplama yerine tek bir hesaplama olur.</p>
+    <p>İki aile matematikleri farklı olduğu için farklı çalışır. Sıcaklık ölçeklerinin her birinin kendi sıfırı vardır, dolayısıyla ikisini toplamak anlamsızdır — o sayfa tek bir değer alır ve onu her ölçekte yeniden yazar. Yakıt ekonomisi daha da kötüdür: 100 km başına litre ile galon başına mil birbirinin tersidir, bu yüzden sayfa ölçeklemek yerine ters çevirir.</p>
+    <p>Dönüşüm çarpanları yuvarlatılmış ders kitabı değerlerini değil uluslararası tanımları izler: inç tam olarak 25.4 mm, pound tam olarak 0.45359237 kg, deniz mili tam olarak 1852 m, standart atmosfer tam olarak 101 325 Pa. Bir birim doğası gereği yaklaşıksa — ortalaması alınmış bir takvim ayı, deniz seviyesinde Mach, metrik ve mekanik beygir gücü — sayfa bunu gizlemek yerine tam o noktada belirtir.</p>
+    <p>Sonuçlar seçtiğiniz bir hassasiyetle, 4 ile 12 anlamlı basamak arasında gösterilir. Bir sonuca tıklandığında sayı, simgesiyle birlikte düz metin olarak kopyalanır ve elektronik tabloya yapıştırılmaya hazır olur. Hassasiyet seçiminiz, diliniz ve temanız yalnızca kendi tarayıcınızda hatırlanır, başka hiçbir yerde değil.</p>
+    <p>Yanlış olduğunu düşündüğünüz bir çarpan mı buldunuz, yoksa burada olması gereken bir birim mi? Bu tür düzeltmeler memnuniyetle karşılanır — birim tabloları tam da hızlıca kontrol edilip düzeltilebilsin diye tek bir dosyada tutulur.</p>
+  </div>
+</section>
+
+<section class="sec sec-pad">
+  <h2>Tüm dönüştürücüler</h2>
+  <div class="related">
+    <a href="../../tr/mass-converter/">Kütle</a>
+    <a href="../../tr/length-converter/">Uzunluk</a>
+    <a href="../../tr/area-converter/">Alan</a>
+    <a href="../../tr/volume-converter/">Hacim</a>
+    <a href="../../tr/time-converter/">Zaman</a>
+    <a href="../../tr/speed-converter/">Hız</a>
+    <a href="../../tr/temperature-converter/">Sıcaklık</a>
+    <a href="../../tr/pressure-converter/">Basınç</a>
+    <a href="../../tr/energy-converter/">Enerji</a>
+    <a href="../../tr/power-converter/">Güç</a>
+    <a href="../../tr/force-converter/">Kuvvet</a>
+    <a href="../../tr/flow-converter/">Debi</a>
+    <a href="../../tr/frequency-converter/">Frekans</a>
+    <a href="../../tr/number-converter/">Sayı ölçeği</a>
+    <a href="../../tr/data-converter/">Dijital depolama</a>
+    <a href="../../tr/angle-converter/">Açı</a>
+    <a href="../../tr/torque-converter/">Tork</a>
+    <a href="../../tr/fuel-converter/">Yakıt ekonomisi</a>
+    <a href="../../tr/density-converter/">Yoğunluk</a>
+    <a href="../../tr/data-rate-converter/">Veri aktarım hızı</a>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Conversion</span>
+    <nav>
+      <a href="../../tr/">Dönüştürücüler</a>
+      <a href="../../tr/about/">Hakkında</a>
+      <a href="../../tr/privacy/">Gizlilik</a>
+    </nav>
+  </div>
+</footer>
+<script src="../../assets/app.js"></script>
+</body>
+</html>
